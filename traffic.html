@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Police Management</title>
+  <link rel="stylesheet" href="traffic1.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#violations">Violations</a></li>
+        <li><a href="#add-violation">Add Violation</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="home">
+    <h1>Welcome to Traffic Police Management System</h1>
+    <p>Manage traffic violations efficiently.</p>
+  </section>
+  
+  <section id="violations">
+    <h2>Violations</h2>
+    <table id="violations-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Vehicle Number</th>
+          <th>Driver Name</th>
+          <th>Violation</th>
+          <th>Date</th>
+          <th>Fine</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Violations will be dynamically added here -->
+      </tbody>
+    </table>
+  </section>
+  
+  <section id="add-violation">
+    <h2>Add Violation</h2>
+    <form id="violation-form">
+      <label for="vehicle-number">Vehicle Number:</label>
+      <input type="text" id="vehicle-number" name="vehicle-number" required>
+      
+      <label for="driver-name">Driver Name:</label>
+      <input type="text" id="driver-name" name="driver-name" required>
+      
+      <label for="violation">Violation:</label>
+      <input type="text" id="violation" name="violation" required>
+      
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="Number">Fine:</label>
+      <input type="number" id="number" name="number" required>
+
+      
+      <button type="submit">Add Violation</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>&copy; 2024 Traffic Police Department. All rights reserved.</p>
+  </footer>
+
+  <script src="traffic2.js"></script>
+</body>
+</html>
